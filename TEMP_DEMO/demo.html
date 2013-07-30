@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>jquery固定层顶部固定层和底部固定层不抖动并且支持IE6</title>
+    <meta name="description" content="jquery固定层制作上下固定层，顶部固定层和底部固定层不抖动并且支持IE6浏览器。"/>
+</head>
+
+<body>
+
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    a, img {
+        border: 0;
+    }
+
+    a, a:visited {
+        color: #5e5e5e;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #4183C4;
+        text-decoration: underline;
+    }
+
+    body {
+        font: 12px/180% Arial, Lucida, Verdana, "宋体", Helvetica, sans-serif;
+        color: #333;
+        background: #fff;
+    }
+
+        /* shortcut */
+    .shortcut {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+    }
+
+    *html, *html body /* 修正IE6振动bug */   {
+        background-image: url(about:blank);
+        background-attachment: fixed;
+    }
+
+    *html .shortcut {
+        position: absolute;
+        top: expression(eval(document.documentElement.scrollTop));
+    }
+
+    .shortcut {
+        height: 28px;
+        line-height: 28px;
+        font-size: 12px;
+        background: #EEEEEE;
+        text-transform: uppercase;
+        box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid #DDDDDD;
+    }
+
+    .shortcut h1 {
+        font-size: 14px;
+        font-family: "微软雅黑", "宋体";
+    }
+
+    .shortcut a, .shortcut h1 {
+        padding: 0px 10px;
+        letter-spacing: 1px;
+        color: #333;
+        text-shadow: 0px 1px 1px #fff;
+        display: block;
+        float: left;
+    }
+
+    .shortcut a:hover {
+        background: #fff;
+    }
+
+    .shortcut span.right {
+        float: right;
+    }
+
+    .shortcut span.right a {
+        float: left;
+        display: block;
+        color: #ff6600;
+        font-weight: 800;
+    }
+
+        /* bottomcut */
+    .bottomcut {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        width: 100%;
+    }
+
+    *html .bottomcut {
+        position: absolute;
+    }
+
+    .bottomcut {
+        height: 28px;
+        line-height: 28px;
+        font-size: 12px;
+        background: #EEEEEE;
+        border-top: 1px solid #DDDDDD;
+        box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .bottomcut h1 {
+        font-size: 14px;
+        font-family: "微软雅黑", "宋体";
+    }
+
+    .bottomcut a, .bottomcut h1 {
+        padding: 0px 10px;
+        letter-spacing: 1px;
+        color: #333;
+        text-shadow: 0px 1px 1px #fff;
+        display: block;
+        float: left;
+    }
+
+    .bottomcut a:hover {
+        background: #fff;
+    }
+
+    .bottomcut span.right {
+        float: right;
+    }
+
+    .bottomcut span.right a {
+        float: left;
+        display: block;
+        color: #ff6600;
+        font-weight: 800;
+    }
+
+        /* demo */
+    .demo {
+        width: 960px;
+        height: 1000px;
+        background: #E0F5FF;
+        border-left: solid 1px #ddd;
+        border-right: solid 1px #ddd;
+        margin: 30px auto 0 auto;
+    }
+
+    .demo h2 {
+        text-align: center;
+        font-size: 18px;
+        padding: 40px 0 0 0;
+    }
+</style>
+
+<div class="shortcut">
+    <h1><a href="http://www.tdog8.com/">jquery固定层顶部固定层和底部固定层不抖动并且支持IE6</a></h1>
+	<span class="right">
+		<a href="http://www.tdog8.com/">下载特效</a>
+	</span>
+</div>
+<!-- shortcut -->
+
+<div class="demo"><h2>支持IE6或以上浏览器</h2></div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(window).scroll(function () {
+            if ($.browser.msie && $.browser.version == "6.0") {
+                $(".bottomcut").css("top", $(window).height() - $(".bottomcut").height() + $(document).scrollTop());
+            }
+        });
+
+    });
+</script>
+
+<div class="bottomcut">
+    <h1><a href="http://www.tdog8.com/">jquery固定层顶部固定层和底部固定层不抖动并且支持IE6</a></h1>
+	<span class="right">
+		<a href="http://www.tdog8.com/">下载特效</a>
+	</span>
+</div>
+<!-- bottomcut -->
+
+</body>
+</html>
