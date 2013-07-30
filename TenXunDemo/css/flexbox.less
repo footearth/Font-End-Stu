@@ -1,0 +1,60 @@
+/*******************/
+/* flex-box mixins */
+/*******************/
+.flex {
+  .flex-display;
+  .flex-direction(row);
+  .flex-wrap(wrap);
+  .flex-align-items(center);
+  .flex-align-self(center);
+  .flex-justify-content(center);
+  .flex-align-content(center);
+}
+
+.flex-display {
+  display: -webkit-flex;
+  display: flex;
+  display: -ms-flexbox;
+}
+
+.flex-direction(@arguments) {
+  -webkit-flex-direction: @arguments;
+  -ms-flex-direction: @arguments;
+  flex-direction: @arguments;
+}
+
+.flex-wrap(@arguments) {
+  -webkit-flex-wrap: @arguments;
+  -ms-flex-wrap: @arguments;
+  flex-wrap: @arguments;
+}
+
+.flex-align-items(@arguments) {
+  -webkit-align-items: @arguments;
+  -ms-align-items: @arguments;
+  align-items: @arguments;
+}
+
+.flex-align-self(@arguments) {
+  -webkit-align-self: @arguments;
+  -ms-align-self: @arguments;
+  align-self: @arguments;
+}
+
+.flex-justify-content(@arguments) {
+  -webkit-justify-content: @arguments;
+  -ms-flex-pack: @arguments;
+  justify-content: @arguments;
+}
+
+.flex-align-content(@arguments) {
+  -webkit-align-content: @arguments;
+  -ms-flex-align: @arguments;
+  align-content: @arguments;
+}
+
+.flex-n(@arguments) {
+  -webkit-flex: @arguments;
+  -ms-flex: @arguments;
+  flex: @arguments;
+}

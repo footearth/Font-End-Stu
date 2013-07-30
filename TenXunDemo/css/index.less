@@ -1,0 +1,200 @@
+@import "normalize.css";
+@import "base";
+@import "flexbox";
+
+body {
+  background-color: #DDDDDD;
+}
+
+header {
+
+  header {
+    .flex;
+    .height(60px);
+
+    span {
+      .flex;
+      .hidBack;
+      .height(100%);
+    }
+
+    span:nth-child(1), span:nth-child(3) {
+      .width(60px);
+    }
+
+    span:nth-child(2) {
+      .flex-n(1);
+    }
+  }
+
+  nav {
+    .flex;
+    .btnBack;
+    .height(60px);
+
+    &>div {
+      .width(100%);
+    }
+
+    div {
+      .flex;
+      .height(100%);
+      .padding-lr(60px);
+
+      span {
+        .flex;
+        .flex-n(1);
+        .btnBack;
+        .height(66%);
+        .font-size(1.1rem);
+        .font-color(#666)
+      }
+    }
+  }
+
+  footer {
+    .flex;
+    .btnBack;
+    .height(40px);
+    .padding-lr(60px);
+
+    &>div {
+      .width(100%);
+    }
+
+    div {
+      .flex;
+
+      input {
+        .flex-n(1);
+      }
+
+      div {
+        .margin-lr(20px, 0px);
+        .font-size(1.0rem);
+        .font-color(#666);
+        .btnBack;
+        .width(80px);
+        .height(30px);
+      }
+    }
+  }
+}
+
+article {
+  .flex;
+  .flex-align-items(stretch);
+  .margin-tb(10px);
+  .padding-lr(60px);
+
+  section {
+    .flex-n(1);
+  }
+
+  section:nth-child(1) {
+    margin-right: 5px;
+
+    div {
+      .flex;
+
+      img {
+        .width(150px);
+        .height(90px);
+      }
+    }
+  }
+
+  section:nth-child(2) {
+    .margin-lr(5px);
+
+  }
+
+  section:nth-child(3) {
+    margin-left: 5px;
+  }
+}
+
+.hidBack {
+  border: 1px solid #666;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-box-shadow: #666 0px 5px 7px;
+  -moz-box-shadow: #666 0px 5px 7px;
+  box-shadow: #666 0px 5px 7px;
+
+  background: #333;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#393939), to(#212121));
+  background: -webkit-linear-gradient(#393939, #212121);
+  background: -moz-linear-gradient(#393939, #212121);
+  background: -ms-linear-gradient(#393939, #212121);
+  background: -o-linear-gradient(#393939, #212121);
+  background: linear-gradient(#393939, #212121);
+
+  // -pie-background: linear-gradient(#393939, #212121);
+  // behavior: url(css/PIE.htc);
+}
+
+.btnBack {
+  border: 1px solid #a1a1a1;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-box-shadow: #888 0px 1px 3px;
+  -moz-box-shadow: #888 0px 1px 3px;
+  box-shadow: #888 0px 1px 3px;
+
+  background: #a1a1a1;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#e4e4e4), to(#b5b5b5));
+  background: -webkit-linear-gradient(#e4e4e4, #b5b5b5);
+  background: -moz-linear-gradient(#e4e4e4, #b5b5b5);
+  background: -ms-linear-gradient(#e4e4e4, #b5b5b5);
+  background: -o-linear-gradient(#e4e4e4, #b5b5b5);
+  background: linear-gradient(#e4e4e4, #b5b5b5);
+
+  // -pie-background: linear-gradient(#e4e4e4, #b5b5b5);
+  // behavior: url(css/PIE.htc);
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #717171;
+  outline: none;
+  font-size: 15px;
+  text-shadow: 0px 1px 0px #fff;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-box-shadow: 1px 1px 0px #efefef;
+  -moz-box-shadow: 1px 1px 0px #efefef;
+  box-shadow: 1px 1px 0px #efefef;
+
+  background: #bbb;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#bcbcbe), to(#ffffff));
+  background: -webkit-linear-gradient(#bcbcbe, #ffffff);
+  background: -moz-linear-gradient(#bcbcbe, #ffffff);
+  background: -ms-linear-gradient(#bcbcbe, #ffffff);
+  background: -o-linear-gradient(#bcbcbe, #ffffff);
+  background: linear-gradient(#bcbcbe, #ffffff);
+
+  //  background: -webkit-gradient(linear, left top, left bottom, from(#bcbcbe), to(#ffffff));
+  //  background: -moz-linear-gradient(top, #bcbcbe, #ffffff);
+}
+
+input.fail {
+  -webkit-box-shadow: 0px 0px 5px #ff4848;
+  -moz-box-shadow: 0px 0px 5px #ff4848;
+  box-shadow: 0px 0px 5px #ff4848;
+}
+
+input:focus {
+  -webkit-box-shadow: 0px 0px 5px #007eff;
+  -moz-box-shadow: 0px 0px 5px #007eff;
+  box-shadow: 0px 0px 5px #007eff;
+}
