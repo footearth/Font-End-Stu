@@ -60,7 +60,7 @@
             this.captions();
 
             if(this.settings.transition === 'custom') {
-                this.nextAnimIndex = -1; // Set animation index.html for custom animation
+                this.nextAnimIndex = -1; // Set animation grid.html for custom animation
             }
 
             if (this.settings.useArrows) {
@@ -239,7 +239,7 @@
             if (!this.inProgress) {
                 // If not already on requested slide
                 if (slideNum !== this.currentPlace) {
-                    // Check whether the requested slide index.html is ahead or behind in the array (if not passed in as param)
+                    // Check whether the requested slide grid.html is ahead or behind in the array (if not passed in as param)
                     if (typeof forward === 'undefined') {
                     	forward = slideNum > this.currentPlace ? true : false;
                     }
@@ -253,7 +253,7 @@
                     // Assign next slide prop (elem)
                     this.$nextSlide = this.$slides.eq(slideNum);
 
-                    // Assign next slide index.html prop (int)
+                    // Assign next slide grid.html prop (int)
                     this.currentPlace = slideNum;
 
                     // User-defined function, fires with transition
@@ -311,8 +311,8 @@
         ,before: function (callback) {
             var that = this;
 
-            // Prepare slide opacity & z-index.html
-            this.RS.$currentSlide.css('z-index.html', 2);
+            // Prepare slide opacity & z-grid.html
+            this.RS.$currentSlide.css('z-grid.html', 2);
             this.RS.$nextSlide.css({'opacity' : 1, 'z-index' : 1});
 
             // Fade out/in captions with CSS/JS depending on browser capability
