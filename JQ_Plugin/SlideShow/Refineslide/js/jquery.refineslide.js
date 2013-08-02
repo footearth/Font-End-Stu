@@ -495,7 +495,7 @@
                 // The time (in ms) added to/subtracted from the delay total for each new gridlet
                 var count = (that.RS.settings.transitionDuration) / (cols + rows);
 
-                // Gridlet creator (divisions of the image grid, positioned with background-images to replicate the look of an entire slide image when assembled)
+                // Gridlet creator (divisions of the image grid, positioned with background-img to replicate the look of an entire slide image when assembled)
                 function gridlet(width, height, top, left, src, imgWidth, imgHeight, c, r) {
                     var delay = (c + r) * count;
 

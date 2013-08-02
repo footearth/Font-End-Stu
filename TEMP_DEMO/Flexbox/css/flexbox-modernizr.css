@@ -187,7 +187,7 @@ nav ul li {
     min-width: 5rem;
 }
 
-/* flexing the images */
+/* flexing the img */
 
 article:nth-of-type(2) {
     display: -ms-flexbox;

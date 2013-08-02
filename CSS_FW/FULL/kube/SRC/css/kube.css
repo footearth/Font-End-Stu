@@ -2189,7 +2189,7 @@ select.unit-100 {
 }
 /* =Media
 -----------------------------------------------------------------------------*/
-/* Responsive images and other embedded objects */
+/* Responsive img and other embedded objects */
 img,
 video {
   max-width: 100%;
