@@ -24,6 +24,12 @@
         [class*='col-'] {
             margin: 5px;
         }
+
+        [class*='col-']>.row>[class*='col-'] {
+            background-color: #77b2d4;
+            color: #2d6987;
+        }
+
     </style>
     <!-- CSS -->
 </head>
@@ -32,6 +38,14 @@
 
 <article class="grid">
 
+    <h2>12 栅格 等分</h2>
+
+    <section class="row">
+
+        <div class="col-1-1">col-1-1</div>
+
+    </section>
+
     <section class="row">
 
         <div class="col-1-2">col-1-2</div>
@@ -44,20 +58,6 @@
         <div class="col-1-3">col-1-3</div>
         <div class="col-1-3">col-1-3</div>
         <div class="col-1-3">col-1-3</div>
-
-    </section>
-
-    <section class="row">
-
-        <div class="col-2-3">col-2-3</div>
-        <div class="col-1-3">col-1-3</div>
-
-    </section>
-
-    <section class="row">
-
-        <div class="col-1-3">col-1-3</div>
-        <div class="col-2-3">col-2-3</div>
 
     </section>
 
@@ -180,10 +180,77 @@
 
 </article>
 
+<article class="grid">
+
+    <h2>12 栅格 非等分</h2>
+
+    <section class="row">
+
+        <div class="col-1-3">col-1-3</div>
+        <div class="col-2-3">col-2-3</div>
+
+    </section>
+
+    <section class="row">
+
+        <div class="col-2-3">col-2-3</div>
+        <div class="col-1-3">col-1-3</div>
+
+    </section>
+
+    <section class="row">
+
+        <div class="col-1-4">col-1-4</div>
+        <div class="col-3-4">col-3-4</div>
+
+    </section>
+
+    <section class="row">
+
+        <div class="col-3-4">col-3-4</div>
+        <div class="col-1-4">col-1-4</div>
+
+    </section>
+
+    <section class="row">
+
+        <div class="col-1-5">col-1-5</div>
+        <div class="col-2-5">col-2-5</div>
+        <div class="col-2-5">col-2-5</div>
+
+    </section>
+
+</article>
+
+<article class="grid">
+
+    <h2>栅格 嵌套</h2>
+
+    <section class="row">
+
+        <div class="col-1-2">
+            col-1-2
+            <section class="row">
+                <div class="col-1-3">col-1-3</div>
+                <div class="col-2-3">col-2-3</div>
+            </section>
+        </div>
+        <div class="col-1-2">col-1-2</div>
+
+    </section>
+
+</article>
+
+<article class="grid">
+
+    <h2>栅格 偏移</h2>
+
+</article>
+
 <!-- JS -->
 <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
 <script type="text/javascript" src="js/less-1.4.2.js"></script>
+<!--<script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>-->
 <!-- JS -->
 
 </body>

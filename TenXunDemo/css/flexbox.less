@@ -180,10 +180,19 @@
  *    initial: 在有剩余空间的情况下不会有任何变化，但是在必要的情况下会被收缩
  *    auto: 会根据主轴自动伸缩以占用所有剩余空间，非常类似于普通流中的自动外边距
  */
+
 .flex-n(@GrowShrink: 0, @n: 1, @auto: auto) {
   -webkit-box-flex: @GrowShrink;
   -moz-box-flex: @GrowShrink;
   -webkit-flex: @GrowShrink @n @auto;
   -ms-flex: @GrowShrink @n @auto;
   flex: @GrowShrink @n @auto;
+}
+
+.flex-n(@n: 1) {
+  -webkit-box-flex: @n;
+  -moz-box-flex: @n;
+  -webkit-flex: @n;
+  -ms-flex: @n;
+  flex: @n;
 }

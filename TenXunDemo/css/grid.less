@@ -1,4 +1,5 @@
 @import "flexbox";
+
 /*
  *  0. 栅格开发三部曲
  *  1. 解决全屏栅格
@@ -22,270 +23,50 @@
   .flex-justify-content(space-between);
 }
 
-.col-per(@perp, @pers) {
-  .flex-n(@pers);
+.col-per(@per) {
+  .flex-n(@per);
 }
 
-.col-1-2 {
-  .col-per(2, 1)
+[class*='col-1-'] {
+  .col-per(1);
 }
 
-.col-1-3 {
-  .col-per(3, 1)
+[class*='col-2-'] {
+  .col-per(2);
 }
 
-.col-2-3 {
-  .col-per(3, 2);
+[class*='col-3-'] {
+  .col-per(3);
 }
 
-.col-1-4 {
-  .col-per(4, 1);
+[class*='col-4-'] {
+  .col-per(4);
 }
 
-.col-2-4 {
-  .col-per(4, 2);
+[class*='col-5-'] {
+  .col-per(5);
 }
 
-.col-3-4 {
-  .col-per(4, 3);
+[class*='col-6-'] {
+  .col-per(6);
 }
 
-.col-1-5 {
-  .col-per(5, 1);
+[class*='col-7-'] {
+  .col-per(7);
 }
 
-.col-2-5 {
-  .col-per(5, 2);
+[class*='col-8-'] {
+  .col-per(8);
 }
 
-.col-3-5 {
-  .col-per(5, 3);
+[class*='col-9-'] {
+  .col-per(9);
 }
 
-.col-4-5 {
-  .col-per(5, 4);
+[class*='col-10-'] {
+  .col-per(10);
 }
 
-.col-1-6 {
-  .col-per(6, 1);
-}
-
-.col-2-6 {
-  .col-per(6, 2);
-}
-
-.col-3-6 {
-  .col-per(6, 3);
-}
-
-.col-4-6 {
-  .col-per(6, 4);
-}
-
-.col-5-6 {
-  .col-per(6, 5);
-}
-
-.col-1-7 {
-  .col-per(7, 1);
-}
-
-.col-2-7 {
-  .col-per(7, 2);
-}
-
-.col-3-7 {
-  .col-per(7, 3);
-}
-
-.col-4-7 {
-  .col-per(7, 4);
-}
-
-.col-5-7 {
-  .col-per(7, 5);
-}
-
-.col-6-7 {
-  .col-per(7, 6);
-}
-
-.col-1-8 {
-  .col-per(8, 1);
-}
-
-.col-2-8 {
-  .col-per(8, 2);
-}
-
-.col-3-8 {
-  .col-per(8, 3);
-}
-
-.col-4-8 {
-  .col-per(8, 4);
-}
-
-.col-5-8 {
-  .col-per(8, 5);
-}
-
-.col-6-8 {
-  .col-per(8, 6);
-}
-
-.col-7-8 {
-  .col-per(8, 7);
-}
-
-.col-1-9 {
-  .col-per(9, 1);
-}
-
-.col-2-9 {
-  .col-per(9, 2);
-}
-
-.col-3-9 {
-  .col-per(9, 3);
-}
-
-.col-4-9 {
-  .col-per(9, 4);
-}
-
-.col-5-9 {
-  .col-per(9, 5);
-}
-
-.col-6-9 {
-  .col-per(9, 6);
-}
-
-.col-7-9 {
-  .col-per(9, 7);
-}
-
-.col-8-9 {
-  .col-per(9, 8);
-}
-
-.col-1-10 {
-  .col-per(10, 1);
-}
-
-.col-2-10 {
-  .col-per(10, 2);
-}
-
-.col-3-10 {
-  .col-per(10, 3);
-}
-
-.col-4-10 {
-  .col-per(10, 4);
-}
-
-.col-5-10 {
-  .col-per(10, 5);
-}
-
-.col-6-10 {
-  .col-per(10, 6);
-}
-
-.col-7-10 {
-  .col-per(10, 7);
-}
-
-.col-8-10 {
-  .col-per(10, 8);
-}
-
-.col-9-10 {
-  .col-per(10, 9);
-}
-
-.col-1-11 {
-  .col-per(11, 1);
-}
-
-.col-2-11 {
-  .col-per(11, 2);
-}
-
-.col-3-11 {
-  .col-per(11, 3);
-}
-
-.col-4-11 {
-  .col-per(11, 4);
-}
-
-.col-5-11 {
-  .col-per(11, 5);
-}
-
-.col-6-11 {
-  .col-per(11, 6);
-}
-
-.col-7-11 {
-  .col-per(11, 7);
-}
-
-.col-8-11 {
-  .col-per(11, 8);
-}
-
-.col-9-11 {
-  .col-per(11, 9);
-}
-
-.col-10-11 {
-  .col-per(11, 10);
-}
-
-.col-1-12 {
-  .col-per(12, 1);
-}
-
-.col-2-12 {
-  .col-per(12, 2);
-}
-
-.col-3-12 {
-  .col-per(12, 3);
-}
-
-.col-4-12 {
-  .col-per(12, 4);
-}
-
-.col-5-12 {
-  .col-per(12, 5);
-}
-
-.col-6-12 {
-  .col-per(12, 6);
-}
-
-.col-7-12 {
-  .col-per(12, 7);
-}
-
-.col-8-12 {
-  .col-per(12, 8);
-}
-
-.col-9-12 {
-  .col-per(12, 9);
-}
-
-.col-10-12 {
-  .col-per(12, 10);
-}
-
-.col-11-12 {
-  .col-per(12, 11);
+[class*='col-11-'] {
+  .col-per(11);
 }
