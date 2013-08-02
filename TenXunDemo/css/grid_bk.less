@@ -15,14 +15,40 @@
 @lt-width: 480px;
 @tt-width: 320px;
 
+@bg-space: @bg-width / 24 - 10;
+@nm-space: @bg-width / 24 - 10;
+@lg-space: @lg-width / 24 - 10;
+@md-space: @md-width / 24 - 10;
+
 .row {
   .flex;
   .flex-align-items(stretch);
   .flex-justify-content(space-between);
+  .padding-tb(10px);
 }
 
 .col-per(@perp, @pers) {
-  .flex-n(@pers);
+  width: @lt-width;
+
+  @media (min-width: @nm-width) and (max-width: @bg-width) {
+    width: (@nm-width / @perp) * @pers;
+  }
+
+  @media (min-width: @lg-width) and (max-width: @nm-width) {
+    width: (@lg-width / @perp) * @pers;
+  }
+
+  @media (min-width: @md-width) and (max-width: @lg-width) {
+    width: (@md-width / @perp) * @pers;
+  }
+
+  @media (min-width: @lt-width) and (max-width: @md-width) {
+    width: @lt-width;
+  }
+
+  @media (max-width: @lt-width) {
+    width: @tt-width;
+  }
 }
 
 .col-1-2 {

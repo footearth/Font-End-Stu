@@ -2003,7 +2003,7 @@
                         // advance to the next closing parenthesis
                         (excess = unquoted.indexOf(")", unquoted.length - excess) - unquoted.length)) {
 
-                        // excess is a negative grid.html
+                        // excess is a negative index.html
                         match[0] = match[0].slice(0, excess);
                         match[2] = unquoted.slice(0, excess);
                     }
@@ -2100,7 +2100,7 @@
 
                                 // non-xml :nth-child(...) stores cache data on `parent`
                                 if (forward && useCache) {
-                                    // Seek `elem` from a previously-cached grid.html
+                                    // Seek `elem` from a previously-cached index.html
                                     outerCache = parent[ expando ] || (parent[ expando ] = {});
                                     cache = outerCache[ type ] || [];
                                     nodeIndex = cache[0] === dirruns && cache[1];
@@ -2119,7 +2119,7 @@
                                         }
                                     }
 
-                                    // Use previously-cached element grid.html if available
+                                    // Use previously-cached element index.html if available
                                 } else if (useCache && (cache = (elem[ expando ] || (elem[ expando ] = {}))[ type ]) && cache[0] === dirruns) {
                                     diff = cache[1];
 
@@ -2130,7 +2130,7 @@
                                         (diff = nodeIndex = 0) || start.pop())) {
 
                                         if (( ofType ? node.nodeName.toLowerCase() === name : node.nodeType === 1 ) && ++diff) {
-                                            // Cache the grid.html of each encountered element
+                                            // Cache the index.html of each encountered element
                                             if (useCache) {
                                                 (node[ expando ] || (node[ expando ] = {}))[ type ] = [ dirruns, diff ];
                                             }
@@ -2785,7 +2785,7 @@
                                 }
                             }
 
-                            // Discard grid.html placeholder values to get only actual matches
+                            // Discard index.html placeholder values to get only actual matches
                             setMatched = condense(setMatched);
                         }
 
@@ -4007,7 +4007,7 @@
             });
         },
         // Based off of the plugin by Clint Helfers, with permission.
-        // http://blindsignals.com/grid.html.php/2009/07/jquery-delay/
+        // http://blindsignals.com/index.html.php/2009/07/jquery-delay/
         delay: function (time, type) {
             time = jQuery.fx ? jQuery.fx.speeds[ time ] || time : time;
             type = type || "fx";
@@ -5814,12 +5814,12 @@
         // the matched set of elements
         index: function (elem) {
 
-            // No argument, return grid.html in parent
+            // No argument, return index.html in parent
             if (!elem) {
                 return ( this[0] && this[0].parentNode ) ? this.first().prevAll().length : -1;
             }
 
-            // grid.html in selector
+            // index.html in selector
             if (typeof elem === "string") {
                 return jQuery.inArray(this[0], jQuery(elem));
             }
@@ -7548,7 +7548,7 @@
                     add(prefix, v);
 
                 } else {
-                    // Item is non-scalar (array or object), encode its numeric grid.html.
+                    // Item is non-scalar (array or object), encode its numeric index.html.
                     buildParams(prefix + "[" + ( typeof v === "object" ? i : "" ) + "]", v, traditional, add);
                 }
             });
@@ -8729,7 +8729,7 @@
 
                             // Firefox throws exceptions when accessing properties
                             // of an xhr when a network error occurred
-                            // http://helpful.knobs-dials.com/grid.html.php/Component_returned_failure_code:_0x80040111_(NS_ERROR_NOT_AVAILABLE)
+                            // http://helpful.knobs-dials.com/index.html.php/Component_returned_failure_code:_0x80040111_(NS_ERROR_NOT_AVAILABLE)
                             try {
 
                                 // Was never called and is aborted or complete
@@ -9035,7 +9035,7 @@
                 delete props[ name ];
 
                 // not quite $.extend, this wont overwrite keys already present.
-                // also - reusing 'grid.html' from above because we have the correct "name"
+                // also - reusing 'index.html' from above because we have the correct "name"
                 for (index in value) {
                     if (!( index in props )) {
                         props[ index ] = value[ index ];

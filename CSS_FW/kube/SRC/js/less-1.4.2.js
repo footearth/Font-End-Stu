@@ -49,8 +49,8 @@
 //    - Matching and slicing on a huge input is often cause of slowdowns.
 //      The solution is to chunkify the input into smaller strings.
 //      The chunks are stored in the `chunks` var,
-//      `j` holds the current chunk grid.html, and `current` holds
-//      the grid.html of the current chunk in relation to `input`.
+//      `j` holds the current chunk index.html, and `current` holds
+//      the index.html of the current chunk in relation to `input`.
 //      This gives us an almost 4x speed-up.
 //
 //    - In many cases, we don't need to match individual tokens;
@@ -71,13 +71,13 @@
 //
     less.Parser = function Parser(env) {
         var input,       // LeSS input string
-            i,           // current grid.html in `input`
+            i,           // current index.html in `input`
             j,           // current chunk
             temp,        // temporarily holds a chunk's state, for backtracking
             memo,        // temporarily holds `i`, when backtracking
-            furthest,    // furthest grid.html the parser has gone to
+            furthest,    // furthest index.html the parser has gone to
             chunks,      // chunkified input
-            current,     // grid.html of current chunk, in `input`
+            current,     // index.html of current chunk, in `input`
             parser;
 
         var that = this;
@@ -2000,7 +2000,7 @@
                 return this.mix(this.rgb(0, 0, 0), color, amount);
             },
             extract: function(values, index) {
-                index = index.value - 1; // (1-based grid.html)
+                index = index.value - 1; // (1-based index.html)
                 return values.value[index];
             },
 
@@ -5173,7 +5173,7 @@
                                 if (potentialMatch.finished) {
                                     potentialMatch.length = needleElements.length;
                                     potentialMatch.endPathIndex = haystackSelectorIndex;
-                                    potentialMatch.endPathElementIndex = hackstackElementIndex + 1; // grid.html after end of match
+                                    potentialMatch.endPathElementIndex = hackstackElementIndex + 1; // index.html after end of match
                                     potentialMatches.length = 0; // we don't allow matches to overlap, so start matching again
                                     matches.push(potentialMatch);
                                 }
