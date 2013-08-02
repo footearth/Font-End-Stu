@@ -12,51 +12,178 @@
 }
 
 .flex-display {
-  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
-.flex-direction(@arguments: row) {
-  -webkit-flex-direction: @arguments;
-  -ms-flex-direction: @arguments;
-  flex-direction: @arguments;
+/* flex-direction */
+/* row | row-reverse | column | column-reverse */
+.flex-direction-base(@direction: row) {
+  -webkit-flex-direction: @direction;
+  -ms-flex-direction: @direction;
+  flex-direction: @direction;
 }
 
-.flex-wrap(@arguments: wrap) {
-  -webkit-flex-wrap: @arguments;
-  -ms-flex-wrap: @arguments;
-  flex-wrap: @arguments;
+.flex-direction-row(@direction: row) when (@direction = row), (@direction = row-reverse) {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
 }
+
+.flex-direction-row(@direction: row) when (@direction = column), (@direction = column-reverse) {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+}
+
+.flex-direction-reverse(@direction: row) when (@direction = row), (@direction = column) {
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+}
+
+.flex-direction-reverse(@direction: row) when (@direction = row-reverse), (@direction = column-reverse) {
+  -webkit-box-direction: reverse;
+  -moz-box-direction: reverse;
+}
+
+.flex-direction(@direction: row) {
+  .flex-direction-base(@direction);
+  .flex-direction-row(@direction);
+  .flex-direction-reverse(@direction);
+}
+
+/***************************************/
+
+/* wrap */
+/* nowrap | wrap | wrap-reverse */
+.flex-wrap(@wrap: wrap) {
+  -webkit-flex-wrap: @wrap;
+  -ms-flex-wrap: @wrap;
+  flex-wrap: @wrap;
+}
+
+/* order */
+.flex-order(@order: 0) {
+  -webkit-box-ordinal-group: @order + 1;
+  -moz-box-ordinal-group: @order + 1;
+  -webkit-order: @order;
+  -ms-flex-order: @order;
+  order: @order;
+}
+
+/* align-conten */
+/* flex-start | flex-end | center | space-between | space-around */
+.flex-align-content-base(@align-content: center) {
+  -webkit-align-content: @align-content;
+  align-content: @align-content;
+}
+
+.flex-align-content(@align-content: center) when (@align-content = center), (@align-content = stretch) {
+  .flex-align-content-base(@align-content);
+  -ms-flex-line-pack: @align-content;
+}
+
+.flex-align-content(@align-content: center) when (@align-content = flex-start) {
+  .flex-align-content-base(@align-content);
+  -ms-flex-line-pack: start;
+}
+
+.flex-align-content(@align-content: center) when (@align-content = flex-end) {
+  .flex-align-content-base(@align-content);
+  -ms-flex-line-pack: end;
+}
+
+.flex-align-content(@align-content: center) when (@align-content = space-between) {
+  .flex-align-content-base(@align-content);
+  -ms-flex-line-pack: justify;
+}
+
+.flex-align-content(@align-content: center) when (@align-content = space-around) {
+  .flex-align-content-base(@align-content);
+  -ms-flex-line-pack: distribute;
+}
+
+/***************************************/
 
 /* 父级元素 */
-.flex-align-items(@arguments: center) {
-  -webkit-align-items: @arguments;
-  -ms-align-items: @arguments;
-  align-items: @arguments;
+/* justify-content */
+/* flex-start | flex-end | center | space-between | space-around */
+.flex-justify-content-base(@justify-content: center) {
+  -webkit-justify-content: @justify-content;
+  justify-content: @justify-content;
 }
+
+.flex-justify-content(@justify-content: center) when (@justify-content = flex-start) {
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+}
+
+.flex-justify-content(@justify-content: center) when (@justify-content = flex-end) {
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+}
+
+.flex-justify-content(@justify-content: center) when (@justify-content = space-between) {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+}
+
+.flex-justify-content(@justify-content: center) when (@justify-content = space-around) {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: distribute;
+}
+
+/***************************************/
+
+/* align-items */
+/* flex-start | flex-end | center | baseline | stretch */
+.flex-align-items-base (@align-items: center) {
+  -webkit-align-items: @align-items;
+  align-items: @align-items;
+}
+
+.flex-align-items(@align-items: center) when (@align-items = flex-start) {
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+}
+
+.flex-align-items(@align-items: center) when (@align-items = flex-end) {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+}
+
+/***************************************/
 
 /* 子级元素 */
-.flex-align-self(@arguments: center) {
-  -webkit-align-self: @arguments;
-  -ms-align-self: @arguments;
-  align-self: @arguments;
+/* align-self */
+/* flex-start | flex-end | center | baseline | stretch */
+.flex-align-self(@align-self: center) {
+  -webkit-align-self: @align-self;
+  -ms-align-self: @align-self;
+  align-self: @align-self;
 }
 
-.flex-justify-content(@arguments: center) {
-  -webkit-justify-content: @arguments;
-  -ms-flex-pack: @arguments;
-  justify-content: @arguments;
-}
-
-.flex-align-content(@arguments: center) {
-  -webkit-align-content: @arguments;
-  -ms-flex-align: @arguments;
-  align-content: @arguments;
-}
-
-.flex-n(@arguments: 1) {
-  -webkit-flex: @arguments;
-  -ms-flex: @arguments;
-  flex: @arguments;
+/*
+ * @Para_1
+ *    flex-grow: 扩展比率
+ *    flex-shrink: 收缩比率
+ * @Para_2
+ *    flex-basis: 伸缩基准值
+ * @Para_3
+ *    initial: 在有剩余空间的情况下不会有任何变化，但是在必要的情况下会被收缩
+ *    auto: 会根据主轴自动伸缩以占用所有剩余空间，非常类似于普通流中的自动外边距
+ */
+.flex-n(@GrowShrink: 0, @n: 1, @auto: auto) {
+  -webkit-box-flex: @GrowShrink;
+  -moz-box-flex: @GrowShrink;
+  -webkit-flex: @GrowShrink @n @auto;
+  -ms-flex: @GrowShrink @n @auto;
+  flex: @GrowShrink @n @auto;
 }
