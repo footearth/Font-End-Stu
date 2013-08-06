@@ -21,17 +21,16 @@ mkswap /dev/sda4
 swapon /dev/sda4
 
 mount /dev/sda3 /mnt
-mkdir -p /mnt/boot/efi
 mkdir -p /mnt/home
-
-mount /dev/sda2 /mnt/boot
+mount /dev/sda3 /mnt/boot
+mkdir -p /mnt/boot/efi
 mount /dev/sda1 /mnt/boot/efi
 mount /dev/sda5 /mnt/home
 
 ### 安装系统
 
 pacman -Syy
-pacstrap /mnt base base-devel grub-efi-x86_64
+pacstrap /mnt base base-devel
 
 ### 生成fstab
 genfstab -U -p /mnt >> /mnt/etc/fstab
@@ -53,9 +52,15 @@ hwclock --systohc --utc
 ### HOSTNAME
 echo arch > /etc/hostname
 
+pacman-key --init && pacman-key --populate archlinux
+pacman -Syu
+
 pacman -S linux-firmware
 pacman -S iw wpa_supplicant wpa_actiond
-pacman -S dialog
+pacman -S dialog axel
+pacman -S grub-efi-x86_64 efi
+
+http://sandy.is-programmer.com/posts/36189.html
 
 ### 源
 * http://mirror.lzu.edu.cn/archlinux/
