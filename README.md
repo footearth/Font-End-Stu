@@ -8,7 +8,7 @@ HTML5 CSS3 前端 DEMO
 * 伸缩布局（Flexbox）
 * 网格布局（Grids）
 
-box -> flexbox
+box -> flexbox  
 columns -> grids
 
 ### 设计目标
@@ -63,76 +63,85 @@ columns -> grids
 
 ### 参考资料
 
-### BLOG
-http://www.w3cplus.com/
-http://dev.oupeng.com/blog
-http://www.css88.com/
-http://www.fantxi.com/
-http://www.daqianduan.com/
-http://www.gbin1.com/
-http://www.36ria.com/
-http://newhtml.net/
-http://www.cnblogs.com/sanshi/
-http://www.zhangxinxu.com/wordpress/
+#### BLOG INFO（Team）
+http://www.w3cplus.com/  
+http://dev.oupeng.com/blog  
+http://www.daqianduan.com/  
+http://www.gbin1.com/  
+http://www.36ria.com/  
+http://newhtml.net/  
+http://www.ilovexuexi.com/  
+http://codepen.io/  
 
-### JQUERY
-http://www.css88.com/jqapi-1.9/
-http://www.bootcss.com/p/jquery.pin/
+#### BLOG INFO（Personal）
+http://www.css88.com/  
+http://www.fantxi.com/  
+http://www.cnblogs.com/lhb25/  
+http://www.cnblogs.com/sanshi/  
+http://www.zhangxinxu.com/wordpress/  
+http://www.liveme.org/  
+http://www.webstuffshare.com/  
 
-### 测试站点
-http://netrenderer.com/index.php
+#### Personal Show Page  
+http://www.designembraced.com/  
+
+#### JQUERY
+http://www.css88.com/jqapi-1.9/  
+http://www.bootcss.com/p/jquery.pin/  
+http://www.tdog8.com/  
+
+#### 测试站点
+http://netrenderer.com/index.php  
 http://mattkersley.com/responsive/
 
-### LESS
-http://www.lesscss.net/
+#### LESS 
+http://www.lesscss.net/  
 
-### IE
-http://msdn.microsoft.com/zh-cn/library/ie/bg124103(v=vs.85).aspx
-http://ued.ctrip.com/blog/wp-content/webkitcss/index.html
-http://mattkersley.com/responsive/
-http://netrenderer.com/
+#### IE
+http://msdn.microsoft.com/zh-cn/library/ie/bg124103(v=vs.85).aspx  
+http://ued.ctrip.com/blog/wp-content/webkitcss/index.html  
+http://mattkersley.com/responsive/  
+http://netrenderer.com/  
 
-### BootStrap
-http://www.bootcss.com/
-http://www.bootcss.com/p/buttons/
-http://www.bootcss.com/p/preboot/
+#### BootStrap
+http://www.bootcss.com/  
+http://www.bootcss.com/p/buttons/   
+http://www.bootcss.com/p/preboot/  
 
-### filefox
-https://developer.mozilla.org/en-US/docs/Web/Guide/CSS
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Reference/Mozilla_Extensions?redirect=no
+#### filefox
+https://developer.mozilla.org/en-US/docs/Web/Guide/CSS  
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Reference/  Mozilla_Extensions?redirect=no  
 
-### CSS3
-http://css3pie.com/
-http://www.html5rocks.com/zh/
+#### CSS3
+http://css3pie.com/    
+http://www.html5rocks.com/zh/  
+http://sev7n.net/demo/css3/css3-3d-carousel.html  
+http://css.doyoe.com/  
+http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/  
+http://www.w3.org/html/ig/zh/wiki/Css3-flexbox/zh-hans   
+http://www.97zzw.com/book/css3book/  
 
-### WEB 中文字体
-http://lifesinger.github.io/lab/2011/default-fonts/
-http://www.ituring.com.cn/minibook/303
-http://www.webstuffshare.com/
-http://www.w3.org/TR/2012/WD-css3-flexbox-20120322/
-http://www.w3.org/html/ig/zh/wiki/Css3-flexbox/zh-hans
-http://css.doyoe.com/
-https://gist.github.com/jayj/4012969
-http://www.tdog8.com/
-http://s2dongman.com/
+#### WEB 设计
+http://lifesinger.github.io/lab/2011/default-fonts/  
+http://www.ituring.com.cn/minibook/303  
+https://gist.github.com/jayj/4012969  
+http://s2dongman.com/  
 
-### 框架
+#### 框架
 bootstrap
-http://purecss.io/
-http://simplegrid.info/
-http://thisisdallas.github.io/Simple-Grid/
-http://imperavi.com/kube/
-http://zh.learnlayout.com/
-http://tympanus.net/Tutorials/BasicReadyToUseCSSStyles/
-http://www.ilovexuexi.com/
-http://codepen.io/
-http://navi.grantcr.com/
-https://www.nitrous.io
-http://www.talkingdata.net/
-http://www.qiniu.com/
-http://www.97zzw.com/book/css3book/
+http://purecss.io/  
+http://simplegrid.info/  
+http://thisisdallas.github.io/Simple-Grid/  
+http://imperavi.com/kube/  
+http://zh.learnlayout.com/  
+http://tympanus.net/Tutorials/BasicReadyToUseCSSStyles/  
+http://navi.grantcr.com/  
+http://www.talkingdata.net/  
 
-http://www.gridsystemgenerator.com/
+#### Storage
+https://www.nitrous.io  
+http://www.qiniu.com/  
+http://www.gridsystemgenerator.com/  
 
 0. 用一个词/一句话说明干技术的原因。描述为何选择前端开发。
 1. 列举自己最熟悉，最为顺手的开发工具组合。
