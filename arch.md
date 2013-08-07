@@ -23,11 +23,12 @@ swapon /dev/sda4
 mount /dev/sda3 /mnt
 
 mkdir -p /mnt/boot
+mkdir -p /mnt/home
 mount /dev/sda3 /mnt/boot
+mount /dev/sda5 /mnt/home
+
 mkdir -p /mnt/boot/efi
 mount /dev/sda1 /mnt/boot/efi
-mkdir -p /mnt/home
-mount /dev/sda5 /mnt/home
 
 ### 修改源
 https://www.archlinux.org/mirrors/
