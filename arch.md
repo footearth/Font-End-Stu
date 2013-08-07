@@ -21,14 +21,25 @@ mkswap /dev/sda4
 swapon /dev/sda4
 
 mount /dev/sda3 /mnt
-mkdir -p /mnt/home
+
+mkdir -p /mnt/boot
 mount /dev/sda3 /mnt/boot
 mkdir -p /mnt/boot/efi
 mount /dev/sda1 /mnt/boot/efi
+mkdir -p /mnt/home
 mount /dev/sda5 /mnt/home
 
-### 安装系统
+### 修改源
+https://www.archlinux.org/mirrors/
+http://126.am/archmirror
+http://footearth.github.io/Font-End-Stu/arch_mirror.md
+rankmirrors -v -n 25 archmirror | sed -n /^Server/p > $WORKDIR/mirrorlist.bak
 
+### 安装系统
+pacman -Syy
+pacman -S axel
+vi /etc/pacman.conf
+XferCommand = /usr/bin/axel -n 5 -v -a -o %o %u
 pacman -Syy
 pacstrap /mnt base base-devel
 
