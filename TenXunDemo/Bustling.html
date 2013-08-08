@@ -8,26 +8,24 @@
     <link rel="stylesheet/less" type="text/css" href="css/bustling.less">
     <!--<link rel="stylesheet" type="text/css" href="css/bustling.css">-->
     <style type="text/css">
-        *, *:after, *:before {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
         body {
             padding: 10px 60px 10px 60px;
         }
 
-        .row > div {
+        .no-flexbox [class*='col-'] {
+            padding: 5px;
+        }
+
+        .flexbox .wrap-col {
+            margin: 5px;
+        }
+
+        .wrap-col {
             min-height: 50px;
             line-height: 50px;
             text-align: center;
             color: #cccccc;
             font-size: 1rem;
-        }
-
-        .wrap-col {
-            margin: 5px;
             background-color: #2d6987;
         }
 
@@ -35,6 +33,7 @@
             background-color: #77b2d4;
             color: #2d6987;
         }
+
     </style>
     <!-- CSS -->
 </head>
@@ -618,214 +617,215 @@
 
 <article class="grid">
 
-    <h2>栅格 偏移</h2>
+<h2>栅格 偏移</h2>
 
-    <section class="row">
+<section class="row">
 
-        <div class="col-1-4">
-            <div class="wrap-col">
-                C-1-4
-            </div>
+    <div class="col-1-4">
+        <div class="wrap-col">
+            C-1-4
         </div>
-        <div class="col-1-4">
-            <div class="wrap-col">
-                C-1-4
-            </div>
+    </div>
+    <div class="col-1-4">
+        <div class="wrap-col">
+            C-1-4
         </div>
-        <div class="col-1-4">
-            <div class="wrap-col">
-                C-1-4
-            </div>
+    </div>
+    <div class="col-1-4">
+        <div class="wrap-col">
+            C-1-4
         </div>
-        <div class="col-1-4">
-            <div class="wrap-col">
-                C-1-4
-            </div>
+    </div>
+    <div class="col-1-4">
+        <div class="wrap-col">
+            C-1-4
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <section class="row">
+<section class="row">
 
-        <div class="col-1-4 Los-1-4">
-            <div class="wrap-col">
-                C-1-4 L-1-4
-            </div>
+    <div class="col-1-4 Los-1-4">
+        <div class="wrap-col">
+            C-1-4 L-1-4
         </div>
-        <div class="col-1-4 Ros-1-4">
-            <div class="wrap-col">
-                C-1-4 R-1-4
-            </div>
+    </div>
+    <div class="col-1-4 Ros-1-4">
+        <div class="wrap-col">
+            C-1-4 R-1-4
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <section class="row">
+<section class="row">
 
-        <div class="col-1-4">
-            <div class="wrap-col">
-                C-1-4
-            </div>
+    <div class="col-1-4">
+        <div class="wrap-col">
+            C-1-4
         </div>
-        <div class="col-1-4 Los-2-4">
-            <div class="wrap-col">
-                C-1-4 L-2-4
-            </div>
+    </div>
+    <div class="col-1-4 Los-2-4">
+        <div class="wrap-col">
+            C-1-4 L-2-4
         </div>
+    </div>
 
-    </section>
+</section>
 
 
-    <section class="row">
+<section class="row">
 
-        <div class="col-1-9">
-            <div class="wrap-col">
-                C-1-9
-            </div>
+    <div class="col-1-9">
+        <div class="wrap-col">
+            C-1-9
         </div>
-        <div class="col-1-9">
-            <div class="wrap-col">
-                C-1-9
-            </div>
+    </div>
+    <div class="col-1-9">
+        <div class="wrap-col">
+            C-1-9
         </div>
-        <div class="col-1-9">
-            <div class="wrap-col">
-                C-1-9
-            </div>
+    </div>
+    <div class="col-1-9">
+        <div class="wrap-col">
+            C-1-9
         </div>
-        <div class="col-1-9">
-            <div class="wrap-col">
-                C-1-9
-            </div>
+    </div>
+    <div class="col-1-9">
+        <div class="wrap-col">
+            C-1-9
         </div>
-        <div class="col-1-9">
-            <div class="wrap-col">
-                C-1-9
-            </div>
+    </div>
+    <div class="col-1-9">
+        <div class="wrap-col">
+            C-1-9
         </div>
-        <div class="col-1-9">
-            <div class="wrap-col">
-                C-1-9
-            </div>
+    </div>
+    <div class="col-1-9">
+        <div class="wrap-col">
+            C-1-9
         </div>
-        <div class="col-1-9">
-            <div class="wrap-col">
-                C-1-9
-            </div>
+    </div>
+    <div class="col-1-9">
+        <div class="wrap-col">
+            C-1-9
         </div>
-        <div class="col-1-9">
-            <div class="wrap-col">
-                C-1-9
-            </div>
+    </div>
+    <div class="col-1-9">
+        <div class="wrap-col">
+            C-1-9
         </div>
-        <div class="col-1-9">
-            <div class="wrap-col">
-                C-1-9
-            </div>
+    </div>
+    <div class="col-1-9">
+        <div class="wrap-col">
+            C-1-9
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <section class="row">
+<section class="row">
 
-        <div class="col-1-9 Los-2-9">
-            <div class="wrap-col">
-                C-1-9 L-2-9
-            </div>
+    <div class="col-1-9 Los-2-9">
+        <div class="wrap-col">
+            C-1-9 L-2-9
         </div>
-        <div class="col-2-9 Los-3-9 Ros-1-9">
-            <div class="wrap-col">
-                C-1-9 L-3-9 R-1-9
-            </div>
+    </div>
+    <div class="col-2-9 Los-3-9 Ros-1-9">
+        <div class="wrap-col">
+            C-1-9 L-3-9 R-1-9
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <section class="row">
+<section class="row">
 
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
-        <div class="col-1-12">
-            <div class="wrap-col">
-                col-1-12
-            </div>
+    </div>
+    <div class="col-1-12">
+        <div class="wrap-col">
+            col-1-12
         </div>
+    </div>
 
-    </section>
+</section>
 
-    <section class="row">
+<section class="row">
 
-        <div class="col-2-12 Los-2-12">
-            <div class="wrap-col">
-                C-2-12 L-2-12
-            </div>
+    <div class="col-2-12 Los-2-12 Ros-1-12">
+        <div class="wrap-col">
+            C-2-12 L-2-12
         </div>
-        <div class="col-4-12 Los-3-12 Ros-1-12">
-            <div class="wrap-col">
-                C-3-12 L-3-12 R-1-12
-            </div>
+    </div>
+    <div class="col-4-12 Los-2-12 Ros-1-12">
+        <div class="wrap-col">
+            C-3-12 L-3-12 R-1-12
         </div>
+    </div>
 
-    </section>
+</section>
+
 </article>
 
 <!-- JS -->
 <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
 <script type="text/javascript" src="js/less-1.4.2.js"></script>
-<!--<script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>-->
+<script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
 <script type="text/javascript">
     $(function () {
         fixMixHeight();
@@ -833,8 +833,15 @@
             $(".wrap-col").each(function (index) {
                 if ($(this).find(".row").length == 0) {
                     var th = $(this).parent().innerHeight();
-                    var mt = parseInt($(this).css("margin-top").replace('px', ''));
-                    var mb = parseInt($(this).css("margin-bottom").replace('px', ''));
+                    var mt = 0;
+                    var mb = 0;
+                    if (Modernizr.flexbox) {
+                        mt = parseInt($(this).css("margin-top").replace('px', ''));
+                        mb = parseInt($(this).css("margin-bottom").replace('px', ''));
+                    } else {
+                        mt = parseInt($(this).parent().css("padding-top").replace('px', ''));
+                        mb = parseInt($(this).parent().css("padding-bottom").replace('px', ''));
+                    }
                     var height = th - mt - mb + "px";
                     $(this).css("height", height);
                     $(this).css("line-height", height);
