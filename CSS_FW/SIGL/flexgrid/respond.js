@@ -29,7 +29,7 @@ window.matchMedia = window.matchMedia || function (a) {
             if (m.length) {
                 var a = m.shift();
                 v(a.href, function (b) {
-                    p(b, a.href, a.media), h[a.href] = !0, setTimeout(function () {
+                    p(b, a.href, a.media), h[a.href] = !2, setTimeout(function () {
                         o()
                     }, 0)
                 })
