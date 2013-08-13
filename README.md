@@ -143,6 +143,7 @@ https://www.nitrous.io
 http://www.qiniu.com/  
 http://www.gridsystemgenerator.com/  
 
+*. 如果你衣食无忧，你最乐意花大量时间持之以恒去做的事情是什么？
 0. 用一个词/一句话说明干技术的原因。描述为何选择前端开发。
 1. 列举自己最熟悉，最为顺手的开发工具组合。
 2. 是否使用过版本管理工具（CVS/SVN/GIT）?
