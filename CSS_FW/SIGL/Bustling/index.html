@@ -2,32 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+
     <title></title>
+
     <!-- CSS -->
     <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/foundation_social/social_foundicons.css">
 
-
+    <link rel="stylesheet/less" type="text/css" href="less/index.less">
     <style type="text/css">
+        .Logo {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-family: 'Slackey', cursive;
+            font-size: 2rem;
+        }
 
+        .foundicon-rss {
+            font-size: 2.8rem;
+        }
     </style>
     <!-- CSS -->
 </head>
 <body>
 
-<header>
+<header class="Header">
 
-    <div>Bustling</div>
+    <span>
+        <div class="Logo">
+            Bustling
+        </div>
+    </span>
 
-    <nav>
-        <ol>
-            <li>一级菜单_1</li>
-            <li>一级菜单_2</li>
-            <li>一级菜单_3</li>
-            <li>一级菜单_4</li>
-            <li>一级菜单_5</li>
-            <li>一级菜单_6</li>
-        </ol>
-    </nav>
+    <span>
+        <nav class="row">
+            <span class="col-1-6">一级菜单_1</span>
+            <span class="col-1-6">一级菜单_2</span>
+            <span class="col-1-6">一级菜单_3</span>
+            <span class="col-1-6">一级菜单_4</span>
+            <span class="col-1-6">一级菜单_5</span>
+            <span class="col-1-6">一级菜单_6</span>
+        </nav>
+    </span>
+
+    <span>
+        <i class="foundicon-rss"></i>
+    </span>
 
 </header>
 
@@ -35,14 +55,13 @@
 
     <aside>
 
-        <nav>
-            <ul>
-                <li>二级菜单_1</li>
-                <li>二级菜单_2</li>
-                <li>二级菜单_3</li>
-                <li>二级菜单_4</li>
-                <li>二级菜单_5</li>
-            </ul>
+        <nav class="row">
+            <span class="col-1-6">二级菜单_1</span>
+            <span class="col-1-6">二级菜单_2</span>
+            <span class="col-1-6">二级菜单_3</span>
+            <span class="col-1-6">二级菜单_4</span>
+            <span class="col-1-6">二级菜单_5</span>
+            <span class="col-1-6">二级菜单_6</span>
         </nav>
 
     </aside>
@@ -68,8 +87,15 @@
 
         <article>
 
-            <header></header>
+            <header>
+                <h2>
+                    文章标题
+                </h2>
+            </header>
+
             <section>
+
+                <nav></nav>
 
             </section>
 
@@ -79,5 +105,13 @@
 
 </section>
 
+<!-- JS -->
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/less-1.4.2.js"></script>
+<script type="text/javascript" src="http://modernizr.com/downloads/modernizr-latest.js"></script>
+<script type="text/javascript">
+
+</script>
+<!-- JS -->
 </body>
 </html>

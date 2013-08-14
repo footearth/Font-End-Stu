@@ -1,0 +1,21 @@
+@import "../css/normalize.css";
+@import "base";
+@import "flexbox";
+@import "grid";
+
+.Header {
+  background: #2f4459;
+  color: #ffffff;
+  .flex;
+  .flex-justify-content(space-between);
+  .flex-align-items(stretch);
+
+  span {
+    .flex;
+  }
+
+  span:nth-child(2) {
+    .flex-justify-content(flex-start);
+    .flex-n(1);
+  }
+}

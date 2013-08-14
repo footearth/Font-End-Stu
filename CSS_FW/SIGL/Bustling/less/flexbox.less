@@ -72,7 +72,7 @@
   order: @order;
 }
 
-/* align-conten */
+/* align-content */
 /* flex-start | flex-end | center | space-between | space-around */
 .flex-align-content-base(@align-content: center) {
   -webkit-align-content: @align-content;
@@ -115,24 +115,35 @@
 }
 
 .flex-justify-content(@justify-content: center) when (@justify-content = flex-start) {
+  .flex-justify-content-base(@justify-content);
   -webkit-box-pack: start;
   -moz-box-pack: start;
   -ms-flex-pack: start;
 }
 
 .flex-justify-content(@justify-content: center) when (@justify-content = flex-end) {
+  .flex-justify-content-base(@justify-content);
   -webkit-box-pack: end;
   -moz-box-pack: end;
   -ms-flex-pack: end;
 }
 
+.flex-justify-content(@justify-content: center) when (@justify-content = center) {
+  .flex-justify-content-base(@justify-content);
+  -webkit-box-pack: @justify-content;
+  -moz-box-pack: @justify-content;
+  -ms-flex-pack: @justify-content;
+}
+
 .flex-justify-content(@justify-content: center) when (@justify-content = space-between) {
+  .flex-justify-content-base(@justify-content);
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   -ms-flex-pack: justify;
 }
 
 .flex-justify-content(@justify-content: center) when (@justify-content = space-around) {
+  .flex-justify-content-base(@justify-content);
   -webkit-box-pack: justify;
   -moz-box-pack: justify;
   -ms-flex-pack: distribute;
@@ -148,15 +159,24 @@
 }
 
 .flex-align-items(@align-items: center) when (@align-items = flex-start) {
+  .flex-align-items-base(@align-items);
   -webkit-box-align: start;
   -moz-box-align: start;
   -ms-flex-align: start;
 }
 
 .flex-align-items(@align-items: center) when (@align-items = flex-end) {
+  .flex-align-items-base(@align-items);
   -webkit-box-align: end;
   -moz-box-align: end;
   -ms-flex-align: end;
+}
+
+.flex-align-items(@align-items: center) when not (@align-items = flex-start), (@align-items = flex-end) {
+  .flex-align-items-base(@align-items);
+  -webkit-box-align: @align-items;
+  -moz-box-align: @align-items;
+  -ms-flex-align: @align-items;
 }
 
 /***************************************/
