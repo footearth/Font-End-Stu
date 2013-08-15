@@ -3,6 +3,19 @@
 @import "flexbox";
 @import "grid";
 
+.flex-align-content-stretch {
+  .flex-align-content(stretch);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: auto;
+  height: 100%;
+}
+
 .Header {
   background: #2f4459;
   color: #ffffff;
@@ -16,6 +29,95 @@
 
   span:nth-child(2) {
     .flex-justify-content(flex-start);
-    .flex-n(1);
+
+    nav>span {
+      border: 2px solid #2f4459;
+      height: 63px;
+    }
+
+    nav>span:hover {
+      border: 2px solid #140805;
+      border-left-color: #3d170f;
+      border-right-color: #3d170f;
+      border-top-color: #521f14;
+      border-bottom-color: #521f14;
+      background-color: #521f14;
+      color: #1abc6e;
+    }
+
   }
 }
+
+section {
+
+  aside {
+    background: #2f4459;
+    color: #ffffff;
+
+    nav {
+      width: 184px;
+      height: 100%;
+      .flex;
+      .flex-align-content(flex-start);
+
+      span {
+        border-top: 1px solid #140805;
+        width: 100%;
+        height: 43px;
+        line-height: 43px;
+        vertical-align: center;
+        padding-left: 1rem;
+      }
+
+      span:last-child {
+        border-bottom: 1px solid #140805;
+      }
+
+      span:hover {
+        background-color: #143352;
+      }
+    }
+  }
+}
+
+.icon_global {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+.rss_icon:before {
+  font-family: "SocialFoundicons";
+  .icon_global;
+  content: "\f002";
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 2.8rem;
+}
+
+.left-icon:before {
+  font-family: "GeneralFoundicons";
+  .icon_global;
+  content: "\f015";
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #1abc6e;
+}
+
+.up-icon:before {
+  font-family: "GeneralFoundicons";
+  .icon_global;
+  content: "\f016";
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #1abc6e;
+}
+

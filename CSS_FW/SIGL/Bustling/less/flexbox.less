@@ -72,7 +72,7 @@
 }
 
 /* align-content */
-/* flex-start | flex-end | center | space-between | space-around */
+/* flex-start | flex-end | center | stretch | space-between | space-around */
 .flex-align-content-base(@align-content: center) {
   -webkit-align-content: @align-content;
   align-content: @align-content;
@@ -214,4 +214,8 @@
   -webkit-flex: @n;
   -ms-flex: @n;
   flex: @n;
+}
+
+.flex-1 {
+  .flex-n(1);
 }

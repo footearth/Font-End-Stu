@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fonts/foundation_social/social_foundicons.css">
+    <link rel="stylesheet" href="fonts/foundation_general/general_foundicons.css">
 
     <link rel="stylesheet/less" type="text/css" href="less/index.less">
     <style type="text/css">
@@ -18,15 +19,13 @@
             font-size: 2rem;
         }
 
-        .foundicon-rss {
-            padding-top: 0.5rem;
-            padding-right: 0.5rem;
-            font-size: 2.8rem;
+        .nav_1 {
+            padding: 0.5rem;
         }
     </style>
     <!-- CSS -->
 </head>
-<body>
+<body class="row-column">
 
 <header class="Header">
 
@@ -36,43 +35,43 @@
         </div>
     </span>
 
-    <span>
+    <span class="flex-1">
         <nav class="row">
-            <span class="col-1-6">一级菜单_1</span>
-            <span class="col-1-6">一级菜单_2</span>
-            <span class="col-1-6">一级菜单_3</span>
-            <span class="col-1-6">一级菜单_4</span>
-            <span class="col-1-6">一级菜单_5</span>
-            <span class="col-1-6">一级菜单_6</span>
+            <span class="col-1-6 nav_1">一级菜单_1</span>
+            <span class="col-1-6 nav_1">一级菜单_2</span>
+            <span class="col-1-6 nav_1">一级菜单_3</span>
+            <span class="col-1-6 nav_1">一级菜单_4</span>
+            <span class="col-1-6 nav_1">一级菜单_5</span>
+            <span class="col-1-6 nav_1">一级菜单_6</span>
         </nav>
     </span>
 
     <span>
-        <i class="foundicon-rss"></i>
+        <i class="rss_icon"></i>
     </span>
 
 </header>
 
-<section>
+<section class="row flex-1 flex-align-content-stretch">
 
-    <aside>
+    <aside class="row-column">
 
-        <nav class="row">
-            <span class="col-1-6">二级菜单_1</span>
-            <span class="col-1-6">二级菜单_2</span>
-            <span class="col-1-6">二级菜单_3</span>
-            <span class="col-1-6">二级菜单_4</span>
-            <span class="col-1-6">二级菜单_5</span>
-            <span class="col-1-6">二级菜单_6</span>
+        <nav class="flex-1">
+            <span>二级菜单_1</span>
+            <span>二级菜单_2</span>
+            <span>二级菜单_3</span>
+            <span>二级菜单_4</span>
+            <span>二级菜单_5</span>
+            <span>二级菜单_6</span>
         </nav>
 
     </aside>
 
-    <article>
+    <article class="flex-1">
 
         <div>
             <span>
-                二级菜单控制
+                <i class="left-icon"></i>
             </span>
             <span>
                 ROAD MAP
@@ -81,7 +80,7 @@
                 Serch Text
             </span>
             <span>
-                一级菜单控制
+                <i class="up-icon"></i>
             </span>
         </div>
 

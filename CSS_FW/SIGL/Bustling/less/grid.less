@@ -23,7 +23,15 @@
   .flex-justify-content(space-between);
 }
 
-.row, [class*='col-'], .wrap-col {
+.row-column {
+  .flex;
+  .flex-align-content(stretch);
+  .flex-direction(column);
+  .flex-align-items(stretch);
+  .flex-justify-content(space-bettween);
+}
+
+.row, .row-column, [class*='col-'], .wrap-col {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
