@@ -6,7 +6,6 @@
   .flex-direction(row);
   .flex-wrap(wrap);
   .flex-align-items(center);
-  .flex-align-self(center);
   .flex-justify-content(center);
   .flex-align-content(center);
 }
@@ -172,7 +171,7 @@
   -ms-flex-align: end;
 }
 
-.flex-align-items(@align-items: center) when not (@align-items = flex-start), (@align-items = flex-end) {
+.flex-align-items(@align-items: center) when not (@align-items = flex-start) and (@align-items = flex-end) {
   .flex-align-items-base(@align-items);
   -webkit-box-align: @align-items;
   -moz-box-align: @align-items;
