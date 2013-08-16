@@ -17,16 +17,23 @@
 @lt-width: 480px;
 @tt-width: 320px;
 
+.row-str {
+  .flex;
+  .flex-align-content(stretch);
+  .flex-align-items(stretch);
+  .flex-justify-content(space-between);
+}
+
 .row {
   .flex;
   .flex-align-items(stretch);
   .flex-justify-content(space-between);
 }
 
-.row-column {
+.row-col {
   .flex;
-  .flex-align-content(stretch);
   .flex-direction(column);
+  .flex-align-content(stretch);
   .flex-align-items(stretch);
   .flex-justify-content(space-bettween);
 }

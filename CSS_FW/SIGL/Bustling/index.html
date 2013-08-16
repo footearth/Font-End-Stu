@@ -12,37 +12,25 @@
 
     <link rel="stylesheet/less" type="text/css" href="less/index.less">
     <style type="text/css">
-        .Logo {
-            padding-left: 1rem;
-            padding-right: 1rem;
-            font-family: 'Slackey', cursive;
-            font-size: 2rem;
-        }
-
-        .nav_1 {
-            padding: 0.5rem;
-        }
     </style>
     <!-- CSS -->
 </head>
-<body class="row-column">
+<body class="row-col">
 
-<header class="Header">
+<header class="Header row-str">
 
-    <span>
-        <div class="Logo">
-            Bustling
-        </div>
+    <span class="Logo">
+        Bustling
     </span>
 
     <span class="flex-1">
         <nav class="row">
-            <span class="col-1-6 nav_1">一级菜单_1</span>
-            <span class="col-1-6 nav_1">一级菜单_2</span>
-            <span class="col-1-6 nav_1">一级菜单_3</span>
-            <span class="col-1-6 nav_1">一级菜单_4</span>
-            <span class="col-1-6 nav_1">一级菜单_5</span>
-            <span class="col-1-6 nav_1">一级菜单_6</span>
+            <span>一级菜单_1</span>
+            <span>一级菜单_2</span>
+            <span`>一级菜单_3</span>
+            <span class="">一级菜单_4</span>
+            <span class="">一级菜单_5</span>
+            <span class="">一级菜单_6</span>
         </nav>
     </span>
 
@@ -52,9 +40,9 @@
 
 </header>
 
-<section class="row flex-1 flex-align-content-stretch">
+<section class="row-str flex-1">
 
-    <aside class="row-column">
+    <aside class="row-col">
 
         <nav class="flex-1">
             <span>二级菜单_1</span>
@@ -67,19 +55,16 @@
 
     </aside>
 
-    <article class="flex-1 row-column">
+    <article class="flex-1 row-col">
 
         <div class="row">
             <span>
                 <i class="left-icon"></i>
             </span>
-            <span>
+            <span class="col-8-12 row">
                 /一级菜单/二级菜单/三级菜单
             </span>
-            <span>
-                <nav>三级菜单</nav>
-            </span>
-            <span>
+            <span class="col-4-12 row">
                 Serch Text
             </span>
             <span>
@@ -87,8 +72,17 @@
             </span>
         </div>
 
+        <div>
+            <nav>
+                <span>三级标题_1</span>
+                <span>三级标题_2</span>
+                <span>三级标题_3</span>
+                <span>三级标题_4</span>
+                <span>三级标题_5</span>
+            </nav>
+        </div>
 
-        <article>
+        <article class="flex-1 row-str">
 
             <header>
                 <h2>
@@ -97,9 +91,14 @@
             </header>
 
             <section>
-
-                <nav></nav>
-
+                <nav class="row-col flex-align-content-stretch">
+                    <span>文章结构</span>
+                    <span>文章结构</span>
+                    <span>文章结构</span>
+                    <span>文章结构</span>
+                    <span>文章结构</span>
+                    <span>文章结构</span>
+                </nav>
             </section>
 
         </article>

@@ -3,25 +3,24 @@
 @import "flexbox";
 @import "grid";
 
-.flex-align-content-stretch {
-  .flex-align-content(stretch);
-}
-
 html {
   height: 100%;
 }
 
 body {
-  margin: auto;
   height: 100%;
 }
 
 .Header {
   background: #2f4459;
   color: #ffffff;
-  .flex;
-  .flex-justify-content(space-between);
-  .flex-align-items(stretch);
+
+  .Logo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Slackey', cursive;
+    font-size: 2rem;
+  }
 
   span {
     .flex;
@@ -31,8 +30,10 @@ body {
     .flex-justify-content(flex-start);
 
     nav>span {
+      .flex-1;
+      padding: 0.5rem;
       border: 2px solid #2f4459;
-      height: 63px;
+      min-height: 30px;
     }
 
     nav>span:hover {
@@ -63,8 +64,8 @@ section {
       span {
         border-top: 1px solid #140805;
         width: 100%;
-        height: 43px;
-        line-height: 43px;
+        height: 50px;
+        line-height: 50px;
         vertical-align: center;
         padding-left: 1rem;
       }
@@ -82,9 +83,25 @@ section {
   article {
     div {
       background-color: #556c81;
+
+      span:first-child {
+        padding-left: 0.5rem;
+        padding-top: 0.2rem;
+      }
+
+      &>span:nth-child(2) {
+        color: #FFC76D;
+        padding-left: 2rem;
+      }
+
+      span:last-child {
+        padding-right: 0.5rem;
+        padding-top: 0.2rem;
+      }
     }
     article {
       background-color: #0D2E4C;
+      color: #ffffff;
     }
   }
 }
@@ -117,8 +134,7 @@ section {
   .icon_global;
   content: "\f015";
   font-size: 1.5rem;
-  color: #ffffff;
-  background-color: #1abc6e;
+  color: #FFC76D;
 }
 
 .up-icon:before {
@@ -126,7 +142,6 @@ section {
   .icon_global;
   content: "\f016";
   font-size: 1.5rem;
-  color: #ffffff;
-  background-color: #1abc6e;
+  color: #FFC76D;
 }
 
