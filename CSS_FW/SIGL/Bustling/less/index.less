@@ -16,87 +16,39 @@ body {
   color: #ffffff;
 
   .Logo {
+    .row;
     padding-left: 1rem;
     padding-right: 1rem;
     font-family: 'Slackey', cursive;
     font-size: 2rem;
   }
 
-  span {
-    .flex;
-  }
-
-  span:nth-child(2) {
-    .flex-justify-content(flex-start);
-
-    nav>span {
-      .flex-1;
-      padding: 0.5rem;
-      border: 2px solid #2f4459;
-      min-height: 30px;
-    }
-
-    nav>span:hover {
-      border: 2px solid #140805;
-      border-left-color: #3d170f;
-      border-right-color: #3d170f;
-      border-top-color: #521f14;
-      border-bottom-color: #521f14;
-      background-color: #521f14;
-      color: #1abc6e;
-    }
-
-  }
 }
 
 section {
-
-  aside {
-    background: #2f4459;
-    color: #ffffff;
-
-    nav {
-      width: 184px;
-      height: 100%;
-      .flex;
-      .flex-align-content(flex-start);
-
-      span {
-        border-top: 1px solid #140805;
-        width: 100%;
-        height: 50px;
-        line-height: 50px;
-        vertical-align: center;
-        padding-left: 1rem;
-      }
-
-      span:last-child {
-        border-bottom: 1px solid #140805;
-      }
-
-      span:hover {
-        background-color: #143352;
-      }
-    }
-  }
 
   article {
     div {
       background-color: #556c81;
 
-      span:first-child {
-        padding-left: 0.5rem;
+      &>span {
         padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+      }
+
+      &>span:first-child {
+        padding-left: 0.5rem;
       }
 
       &>span:nth-child(2) {
+        .flex-justify-content(space-between);
         color: #FFC76D;
         padding-left: 2rem;
+        padding-right: 2rem;
       }
 
-      span:last-child {
+      &>span:last-child {
         padding-right: 0.5rem;
-        padding-top: 0.2rem;
       }
     }
     article {
@@ -143,5 +95,59 @@ section {
   content: "\f016";
   font-size: 1.5rem;
   color: #FFC76D;
+}
+
+.NavLvOne {
+  .row-str;
+
+  nav {
+    .row-str;
+  }
+
+  span {
+    .row;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 2px solid #2f4459;
+  }
+
+  span:hover {
+    border: 2px solid #140805;
+    border-left-color: #3d170f;
+    border-right-color: #3d170f;
+    border-top-color: #521f14;
+    border-bottom-color: #521f14;
+    background-color: #521f14;
+    color: #1abc6e;
+  }
+
+}
+
+.NavLvTwo {
+  background: #2f4459;
+  color: #ffffff;
+  .row-col;
+
+  nav {
+    width: 184px;
+    .flex-1;
+    .flex-align-content(flex-start);
+
+    span {
+      .row;
+      border-top: 1px solid #140805;
+      width: 100%;
+      height: 50px;
+      padding-left: 1rem;
+    }
+
+    span:last-child {
+      border-bottom: 1px solid #140805;
+    }
+
+    span:hover {
+      background-color: #143352;
+    }
+  }
 }
 

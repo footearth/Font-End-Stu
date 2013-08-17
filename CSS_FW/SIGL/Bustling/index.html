@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
 
@@ -23,14 +23,14 @@
         Bustling
     </span>
 
-    <span class="flex-1">
-        <nav class="row">
-            <span>一级菜单_1</span>
-            <span>一级菜单_2</span>
-            <span>一级菜单_3</span>
-            <span>一级菜单_4</span>
-            <span>一级菜单_5</span>
-            <span>一级菜单_6</span>
+    <span class="NavLvOne flex-1">
+        <nav>
+            <span>页面结构</span>
+            <span>CSS工具</span>
+            <span>GRID栅格系统</span>
+            <span>组件集</span>
+            <span>效果集</span>
+            <span>MVC</span>
         </nav>
     </span>
 
@@ -42,9 +42,8 @@
 
 <section class="row-str flex-1">
 
-    <aside class="row-col">
-
-        <nav class="flex-1">
+    <aside class="NavLvTwo">
+        <nav>
             <span>二级菜单_1</span>
             <span>二级菜单_2</span>
             <span>二级菜单_3</span>
@@ -52,22 +51,21 @@
             <span>二级菜单_5</span>
             <span>二级菜单_6</span>
         </nav>
-
     </aside>
 
     <article class="flex-1 row-col">
 
         <div class="row">
-            <span>
+            <span class="row">
                 <i class="left-icon"></i>
             </span>
-            <span class="col-8-12 row">
-                /一级菜单/二级菜单/三级菜单
+            <span class="flex-1 row">
+                <span class="row">
+                    /一级菜单/二级菜单/三级菜单
+                </span>
+                <input type="text"/>
             </span>
-            <span class="col-4-12 row">
-                Serch Text
-            </span>
-            <span>
+            <span class="row">
                 <i class="up-icon"></i>
             </span>
         </div>
@@ -82,16 +80,16 @@
             </nav>
         </div>
 
-        <article class="flex-1 row-str">
+        <div class="flex-1 row-str">
 
-            <header>
-                <h2>
+            <article class="flex-1">
+                <header>
                     文章标题
-                </h2>
-            </header>
+                </header>
+            </article>
 
-            <section>
-                <nav class="row-col flex-align-content-stretch">
+            <aside>
+                <nav class="row-col">
                     <span>文章结构</span>
                     <span>文章结构</span>
                     <span>文章结构</span>
@@ -99,9 +97,9 @@
                     <span>文章结构</span>
                     <span>文章结构</span>
                 </nav>
-            </section>
+            </aside>
 
-        </article>
+        </div>
 
     </article>
 
