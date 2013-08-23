@@ -1,0 +1,2 @@
+pygments:     true
+exclude:       ["Makefile", "CSS_GRID.md", "less", "node_modules", "package.json"]
