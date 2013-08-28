@@ -75,3 +75,8 @@
     * chrom(new)
 
 ## 命名原因
+
+https://github.com/kissyteam/kissy
+http://docs.kissyui.com/
+http://cloudajs.org/
+https://github.com/brandnewera/sumeru
