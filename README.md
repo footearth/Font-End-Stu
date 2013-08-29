@@ -1,6 +1,17 @@
 HTML5 CSS3 前端 DEMO
 ============
 
+发现了 支付宝的 Arale & Alice 框架，思路一致，嗯，就不重复造轮子了。。。
+
+* http://aralejs.org/
+* http://aliceui.org/
+* seajs
+
+Kissy Arale 关系 历史
+
+* http://www.zhihu.com/question/20099586/answer/13971670
+* http://zoomq.qiniudn.com/ZQScrapBook/ZqFLOSS/data/20120803011346/index.html
+
 * 浮动布局（float）
 * 定位布局（position）
 * 行内块布局（inline-block）
