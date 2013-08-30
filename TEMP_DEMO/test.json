@@ -1,0 +1,42 @@
+{"status": 0, "size": 3, "total": 3, "pois": [
+    {
+        "address": "\u5b89\u6167\u91cc2\u533a12\u53f7\u697c\u5317\u8fb0\u515a\u6821\u57f9\u8bad\u4e2d\u5fc3131\u5ba4",
+        "city": "\u5317\u4eac\u5e02",
+        "create_time": "2013-08-30 09:55:46",
+        "district": "\u671d\u9633\u533a",
+        "geotable_id": 32489,
+        "location": [116.416214, 39.999876],
+        "modify_time": "2013-08-30 09:57:25",
+        "province": "\u5317\u4eac\u5e02",
+        "tags": "\u6625\u96ea\u5206\u6821",
+        "title": "\u6625\u96ea\u4e9a\u8fd0\u6751\u5206\u6821",
+        "city_id": 131,
+        "id": 19252616
+    },
+    {
+        "title": "\u6625\u96ea\u68a8\u56ed\u5206\u6821",
+        "location": [116.673606, 39.891854],
+        "city": "\u5317\u4eac\u5e02",
+        "create_time": "2013-08-30 10:09:30",
+        "geotable_id": 32489,
+        "address": "\u4e2d\u5efa\u4e8c\u5c40\u5199\u5b57\u697c407\u5ba4(\u68a8\u56ed\u57ce\u94c1\u659c\u5bf9\u9762)",
+        "province": "\u5317\u4eac\u5e02",
+        "district": "\u901a\u5dde\u533a",
+        "city_id": 131,
+        "id": 19252641
+    },
+    {
+        "address": "\u5317\u4eac\u5e02\u6d77\u6dc0\u533a\u897f\u56db\u73af\u5317\u8def63\u53f7\u99a8\u96c5\u5927\u53a6\u4e09\u5c42325\u5ba4",
+        "city": "\u5317\u4eac\u5e02",
+        "create_time": "2013-08-30 10:12:04",
+        "district": "\u6d77\u6dc0\u533a",
+        "geotable_id": 32489,
+        "location": [116.2813, 39.959467],
+        "modify_time": "2013-08-30 10:12:47",
+        "province": "\u5317\u4eac\u5e02",
+        "tags": "\u4f11\u95f2\u5a31\u4e50,\u5ea6\u5047\u6751\/\u5ea6\u5047\u533a",
+        "title": "\u6625\u96ea\u56db\u5b63\u9752\u6821\u533a",
+        "city_id": 131,
+        "id": 19252643
+    }
+], "message": "\u6210\u529f"}
